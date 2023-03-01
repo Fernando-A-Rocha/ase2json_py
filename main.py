@@ -30,13 +30,13 @@ class Buffer:
         self.position = 0
 
     def format(self, byte):
-        return "{:02x}".format(ord(byte))
+        return "{:02x}".format(byte)
 
     # We use this function to read the next COUNT "bytes" from the text, then move the "cursor" after the read postion
     def read(self, count):
         ret = ""
         for i in self.text[self.position : self.position + count]:
-            if ord(i) != 0:
+            if i != 0:
                 ret += self.format(i)
 
         self.position += count
@@ -209,6 +209,35 @@ def parse_server_v2(buffer):
 
     return servers
 
+def format_json_single(server):
+    
+    string = "{ "
+    string += "\"ip\": \"" + server.ip + "\", "
+    string += "\"port\": " + str(server.port) + ", "
+    string += "\"playersCount\": " + str(server.playersCount) + ", "
+    string += "\"maxPlayersCount\": " + str(server.maxPlayersCount) + ", "
+    string += "\"gameName\": \"" + server.gameName + "\", "
+    string += "\"serverName\": \"" + server.serverName + "\", "
+    string += "\"modeName\": \"" + server.modeName + "\", "
+    string += "\"mapName\": \"" + server.mapName + "\", "
+    string += "\"version\": \"" + server.verName + "\", "
+
+    if server.passworded != 0:
+        string += "\"passworded\": true, "
+    else:
+        string += "\"passworded\": false, "
+
+    string += "\"players\": ["
+
+    for playerName in server.players:
+        string += "\"" + playerName + "\", "
+
+    string += "], "
+    string += "\"httpPort\": " + str(server.httpPort)
+
+    string += " }"
+    return string
+
 def format_json(servers):
     string = "[\n"
 
@@ -218,35 +247,10 @@ def format_json(servers):
         if firstServer == False:
             string += ",\n"
 
-        string += "        { "
-        string += "\"ip\": \"" + server.ip + "\", "
-        string += "\"port\": " + str(server.port) + ", "
-        string += "\"playersCount\": " + str(server.playersCount) + ", "
-        string += "\"maxPlayersCount\": " + str(server.maxPlayersCount) + ", "
-        string += "\"gameName\": \"" + server.gameName + "\", "
-        string += "\"serverName\": \"" + server.serverName + "\", "
-        string += "\"modeName\": \"" + server.modeName + "\", "
-        string += "\"mapName\": \"" + server.mapName + "\", "
-        string += "\"version\": \"" + server.verName + "\", "
-
-        if server.passworded != 0:
-            string += "\"passworded\": true, "
-        else:
-            string += "\"passworded\": false, "
-
-        string += "\"players\": ["
-
-        for playerName in server.players:
-            string += "\"" + playerName + "\", "
-
-        string += "], "
-        string += "\"httpPort\": " + str(server.httpPort)
-
+        string += format_json_single(server)
         firstServer = False
 
-        string += " }"
-
-    string += "\n    ]"
+    string += "\n]"
 
     return string
 
@@ -267,4 +271,23 @@ if ver == 0:
 if ver == 2:
     servers = parse_server_v2(buffer)
 
-print(format_json(servers))
+# print(format_json(servers))
+
+def findServerByIpAndPort(servers, ip, port):
+    for server in servers:
+        if server.ip == ip and server.port == port:
+            return server
+
+    return None
+
+test_ip = "164.132.206.95"
+test_port = 22003
+
+test_server = findServerByIpAndPort(servers, test_ip, test_port)
+
+print("Searching " + test_ip + ":" + str(test_port) + " in MTA:SA Masterlist ...")
+if test_server != None:
+    print("Found:")
+    print(format_json_single(test_server))
+else:
+    print("Not found")
