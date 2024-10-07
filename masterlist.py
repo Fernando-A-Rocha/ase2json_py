@@ -1,4 +1,19 @@
+# Fetches servers from official MTA Masterlist
+
+import os
+import sys
 import requests
+import json
+
+from fake_useragent import UserAgent
+ua = UserAgent()
+headers = {'User-Agent': str(ua.chrome)}
+print(headers)
+
+URL_MASTERLIST = 'https://master.multitheftauto.com/ase/mta/'
+REQ_TIMEOUT = 5 # Seconds
+FILENAME_BIN_BACKUP = 'masterlist.bin'
+FILENAME_JSON_BACKUP = 'masterlist.json'
 
 LENGTH_OF_INT = 4
 LENGTH_OF_SHORT = 2
@@ -209,85 +224,69 @@ def parse_server_v2(buffer):
 
     return servers
 
-def format_json_single(server):
-    
-    string = "{ "
-    string += "\"ip\": \"" + server.ip + "\", "
-    string += "\"port\": " + str(server.port) + ", "
-    string += "\"playersCount\": " + str(server.playersCount) + ", "
-    string += "\"maxPlayersCount\": " + str(server.maxPlayersCount) + ", "
-    string += "\"gameName\": \"" + server.gameName + "\", "
-    string += "\"serverName\": \"" + server.serverName + "\", "
-    string += "\"modeName\": \"" + server.modeName + "\", "
-    string += "\"mapName\": \"" + server.mapName + "\", "
-    string += "\"version\": \"" + server.verName + "\", "
+if __name__ == "__main__":
+    print("\nOptional script usage: python masterlist.py <ip> <port>\n")
 
-    if server.passworded != 0:
-        string += "\"passworded\": true, "
-    else:
-        string += "\"passworded\": false, "
+    # We try to get the data from the official server
+    print(f"Fetching MTA:SA Masterlist (timeout {REQ_TIMEOUT}s) ...")
+    from_web = True
+    try:
+        r = requests.get(URL_MASTERLIST, timeout=REQ_TIMEOUT, headers=headers).content
+        print(f"Fetched data from {URL_MASTERLIST}")
+    except Exception:
+        # It failed, so we try to load the data from the file
+        print(f"Failed to fetch from {URL_MASTERLIST}")
+        # Check if file exists
+        if not os.path.exists(FILENAME_BIN_BACKUP):
+            print(f"Backup file {FILENAME_BIN_BACKUP} does not exist. Exiting ...")
+            sys.exit(1)
+        try:
+            with open(FILENAME_BIN_BACKUP, "rb") as f:
+                r = f.read()
+            from_web = False
+            print(f"Loaded data from {FILENAME_BIN_BACKUP}")
+        except Exception:
+            print(f"Failed to read from {FILENAME_BIN_BACKUP}. Exiting ...")
+            sys.exit(1)
 
-    string += "\"players\": ["
+    buffer = Buffer(r)
 
-    for playerName in server.players:
-        string += "\"" + playerName + "\", "
+    # Check the first byte of the string
+    count = buffer.read(LENGTH_OF_SHORT)
+    ver = 0
+    if count == 0:
+        # If the first byte is 0 that means that it uses the default version where there are lots of data about the servers
+        ver = buffer.read(LENGTH_OF_SHORT)
 
-    string += "], "
-    string += "\"httpPort\": " + str(server.httpPort)
+    servers = []
+    if ver == 0:
+        servers = parse_server(buffer)
+    if ver == 2:
+        servers = parse_server_v2(buffer)
 
-    string += " }"
-    return string
 
-def format_json(servers):
-    string = "[\n"
+    if from_web:
+        # Save to file
+        with open(FILENAME_BIN_BACKUP, "wb") as f:
+            f.write(r)
+        print(f"Saved received data to {FILENAME_BIN_BACKUP}")
 
-    firstServer = True
+    print(f"Found {len(servers)} servers in the masterlist")
 
-    for server in servers:
-        if firstServer == False:
-            string += ",\n"
+    # Save servers list to JSON file
+    with open(FILENAME_JSON_BACKUP, "w") as f:
+        json.dump([server.__dict__ for server in servers], f, indent=4)
+    print(f"Saved received list of servers to {FILENAME_JSON_BACKUP}")
 
-        string += format_json_single(server)
-        firstServer = False
+    if len(sys.argv) == 3:
+        test_ip = sys.argv[1]
+        test_port = int(sys.argv[2])
 
-    string += "\n]"
-
-    return string
-
-# We get the data from the official server
-r = requests.get('https://master.multitheftauto.com/ase/mta/').content
-buffer = Buffer(r)
-
-# Check the first byte of the string
-count = buffer.read(LENGTH_OF_SHORT)
-ver = 0
-if count == 0:
-    # If the first byte is 0 that means that it uses the default version where there are lots of data about the servers
-    ver = buffer.read(LENGTH_OF_SHORT)
-
-servers = []
-if ver == 0:
-    servers = parse_server(buffer)
-if ver == 2:
-    servers = parse_server_v2(buffer)
-
-# print(format_json(servers))
-
-def findServerByIpAndPort(servers, ip, port):
-    for server in servers:
-        if server.ip == ip and server.port == port:
-            return server
-
-    return None
-
-test_ip = "164.132.206.95"
-test_port = 22003
-
-test_server = findServerByIpAndPort(servers, test_ip, test_port)
-
-print("Searching " + test_ip + ":" + str(test_port) + " in MTA:SA Masterlist ...")
-if test_server != None:
-    print("Found:")
-    print(format_json_single(test_server))
-else:
-    print("Not found")
+        print(f"Searching {test_ip}:{test_port} in the list ...")
+        for server in servers:
+            if server.ip == test_ip and server.port == test_port:
+                print("Found:")
+                print(json.dumps(server.__dict__, indent=4))
+                sys.exit(0)
+        
+        print("Not found")
