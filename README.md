@@ -1,5 +1,7 @@
-# MTASA ASE BYTECODE TO JSON IN PYTHON
-The program intended to download MTA ASE bytecode and convert to JSON format in python.
+# ase2json_py
 
-This repo is a version of Tederis's ase2json repo. The motivation behind this was that i don't really know C++, and i plan to work with this data later so it made sense to translate his work into Python.
-If you find this helpful feel free to star it!
+This Python program downloads the MTA:SA server list from [https://master.multitheftauto.com/ase/mta/] and parses it, extracting the list of servers to JSON. The data provided by the master server is in a format similar to ASE ([All-Seeing Eye Protocol](https://int64.org/docs/gamestat-protocols/ase.html)).
+
+There are no dependencies. The only requirement is Python 3+. Normal usage: `python masterlist.py`.
+
+You can use it to quickly search for a specific server using `python masterlist.py <ip> <port>`.
