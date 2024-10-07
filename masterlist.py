@@ -5,10 +5,10 @@ import sys
 import requests
 import json
 
-from fake_useragent import UserAgent
-ua = UserAgent()
-headers = {'User-Agent': str(ua.chrome)}
-print(headers)
+# from fake_useragent import UserAgent
+# ua = UserAgent()
+# headers = {'User-Agent': str(ua.chrome)}
+# print(headers)
 
 URL_MASTERLIST = 'https://master.multitheftauto.com/ase/mta/'
 REQ_TIMEOUT = 5 # Seconds
@@ -231,7 +231,7 @@ if __name__ == "__main__":
     print(f"Fetching MTA:SA Masterlist (timeout {REQ_TIMEOUT}s) ...")
     from_web = True
     try:
-        r = requests.get(URL_MASTERLIST, timeout=REQ_TIMEOUT, headers=headers).content
+        r = requests.get(URL_MASTERLIST, timeout=REQ_TIMEOUT).content
         print(f"Fetched data from {URL_MASTERLIST}")
     except Exception:
         # It failed, so we try to load the data from the file
