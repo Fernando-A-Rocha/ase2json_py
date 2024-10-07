@@ -5,3 +5,5 @@ This Python program downloads the MTA:SA server list from [https://master.multit
 There are no dependencies. The only requirement is Python 3+. Normal usage: `python masterlist.py`.
 
 You can use it to quickly search for a specific server using `python masterlist.py <ip> <port>`.
+
+Credits to [tederis](https://github.com/tederis) for original idea and [C++ code (ase2json)](https://github.com/tederis/ase2json).
