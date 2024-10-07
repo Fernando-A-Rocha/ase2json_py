@@ -12,8 +12,8 @@ import json
 
 URL_MASTERLIST = 'https://master.multitheftauto.com/ase/mta/'
 REQ_TIMEOUT = 5 # Seconds
-FILENAME_BIN_BACKUP = 'masterlist.bin'
-FILENAME_JSON_BACKUP = 'masterlist.json'
+FILENAME_BIN_BACKUP = 'output/masterlist.bin'
+FILENAME_JSON_BACKUP = 'output/masterlist.json'
 
 LENGTH_OF_INT = 4
 LENGTH_OF_SHORT = 2

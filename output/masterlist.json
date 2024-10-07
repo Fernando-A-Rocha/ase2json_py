@@ -137,7 +137,7 @@
     {
         "ip": "142.44.229.82",
         "port": 22743,
-        "playersCount": 29,
+        "playersCount": 43,
         "maxPlayersCount": 2024,
         "gameName": "",
         "serverName": "[BR] \u00e2\u0096\u0088 \u00e2\u0096\u0088 BRASIL MUNDO REAL \u00e2\u0096\u0088 \u00e2\u0096\u0088 [RP/RPG] \u00e2\u009e\u00a5 REALISTA \u00e2\u009e\u00a5 CORP / FAC \u00e2\u009e\u00a5 FIVEM/BMR",
@@ -407,7 +407,7 @@
     {
         "ip": "94.143.231.27",
         "port": 22015,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 66,
         "gameName": "",
         "serverName": "mekan - DD/CW/TRAINING Server #3",
@@ -43517,7 +43517,7 @@
     {
         "ip": "146.59.4.27",
         "port": 20164,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 20,
         "gameName": "",
         "serverName": "MTA @ ServerProject.pl",
@@ -44012,7 +44012,7 @@
     {
         "ip": "146.103.26.120",
         "port": 22003,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 300,
         "gameName": "",
         "serverName": "Secret Roleplay v1 Orginal Concent/Hard Experince Sesli/Yazili/Istanbul   ",
@@ -44297,7 +44297,7 @@
     {
         "ip": "94.143.231.27",
         "port": 22018,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 66,
         "gameName": "",
         "serverName": "mekan - DD/CW/TRAINING Server #6",
@@ -44672,7 +44672,7 @@
     {
         "ip": "185.3.200.244",
         "port": 22003,
-        "playersCount": 0,
+        "playersCount": 3,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "Xenon Gaming RP | Xenon Role Play",
@@ -45017,7 +45017,7 @@
     {
         "ip": "147.135.31.37",
         "port": 22024,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "Sintonia RP | RolePlay | Dominicano | Latino",
@@ -45212,8 +45212,8 @@
     {
         "ip": "54.38.132.159",
         "port": 20264,
-        "playersCount": 2,
-        "maxPlayersCount": 20,
+        "playersCount": 0,
+        "maxPlayersCount": 30,
         "gameName": "",
         "serverName": "MagicRPG 2.0 | Voice | Niskie zarobki | Warianty | Darmowe Premium |",
         "modeName": "",
@@ -48242,7 +48242,7 @@
     {
         "ip": "181.215.60.244",
         "port": 25575,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 2024,
         "gameName": "",
         "serverName": "[CZ/SK] Krownsiegg - Testovac\u00c3\u00ad Server - HuxPlay.eu",
@@ -48872,7 +48872,7 @@
     {
         "ip": "45.9.30.81",
         "port": 22003,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 300,
         "gameName": "",
         "serverName": "Milas Roleplay | Turk/T\u00c3\u00bcrk | SesliYaz\u00c4\u00b1l\u00c4\u00b1 | Medium Konsept",
@@ -49172,7 +49172,7 @@
     {
         "ip": "172.111.48.196",
         "port": 22003,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 2024,
         "gameName": "",
         "serverName": "[PT/BR] STRONG ROLEPLAY | SEASON ONE | STRONGROLEPLAY.COM [BR]",
@@ -49332,21 +49332,6 @@
         "passworded": 1,
         "players": [],
         "httpPort": 22126,
-        "serials": 0
-    },
-    {
-        "ip": "149.56.41.55",
-        "port": 22063,
-        "playersCount": 0,
-        "maxPlayersCount": 500,
-        "gameName": "",
-        "serverName": "RPG online Development",
-        "modeName": "",
-        "mapName": "",
-        "verName": "1.6",
-        "passworded": 1,
-        "players": [],
-        "httpPort": 22065,
         "serials": 0
     },
     {
@@ -50087,7 +50072,7 @@
     {
         "ip": "91.124.63.218",
         "port": 22003,
-        "playersCount": 3,
+        "playersCount": 9,
         "maxPlayersCount": 1000,
         "gameName": "",
         "serverName": "\u00e2\u0096\u0088 Crew Deathplay \u00e2\u009d\u00b0\u00e2\u009d\u00b0 Roleplay Tarz\u00c4\u00b1nda Sesli Deathmatch Keyfi \u00e2\u009d\u00b1\u00e2\u009d\u00b1 (Turk/T\u00c3\u00bcrk)",
@@ -50972,7 +50957,7 @@
     {
         "ip": "78.46.39.20",
         "port": 12629,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 50,
         "gameName": "",
         "serverName": "Elite Tactics/Derby/Shooter/Ctf [EN/AR] \u00d8\u00a7\u00d9\u008a\u00d9\u0084\u00d9\u008a\u00d8\u00aa \u00d9\u0084\u00d9\u0084\u00d8\u00ad\u00d8\u00b1\u00d8\u00a8 \u00d9\u0088\u00d8\u00a7\u00d9\u0084\u00d8\u00aa\u00d9\u0083\u00d8\u00aa\u00d9\u008a\u00d9\u0083",
@@ -51147,21 +51132,6 @@
         "passworded": 1,
         "players": [],
         "httpPort": 25578,
-        "serials": 0
-    },
-    {
-        "ip": "134.255.233.15",
-        "port": 22139,
-        "playersCount": 1,
-        "maxPlayersCount": 52,
-        "gameName": "",
-        "serverName": "CIS Cops 'n' Robbers, Gang Wars, Civilians / cis.gg / English/Arabic / And More",
-        "modeName": "",
-        "mapName": "",
-        "verName": "1.6",
-        "passworded": 0,
-        "players": [],
-        "httpPort": 22144,
         "serials": 0
     },
     {
@@ -51752,7 +51722,7 @@
     {
         "ip": "78.46.39.20",
         "port": 5741,
-        "playersCount": 0,
+        "playersCount": 2,
         "maxPlayersCount": 50,
         "gameName": "",
         "serverName": " PT/BR Just Tatics 2k24 ",
@@ -51767,7 +51737,7 @@
     {
         "ip": "54.38.132.159",
         "port": 20584,
-        "playersCount": 2,
+        "playersCount": 3,
         "maxPlayersCount": 50,
         "gameName": "",
         "serverName": "PSSR STORY | Polski Serwer S\u00c5\u0082u\u00c5\u00bcb Ratunkowych |RPG|Frakcje|Organizacje Przest\u00c4\u0099pcze",
@@ -52127,7 +52097,7 @@
     {
         "ip": "104.167.222.158",
         "port": 7971,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 50,
         "gameName": "",
         "serverName": "Dominican Republic RP|Santo Domingo|Teteos|Musicologos|Trabajos|Policias|Gangas|",
@@ -52337,7 +52307,7 @@
     {
         "ip": "5.57.39.205",
         "port": 22003,
-        "playersCount": 0,
+        "playersCount": 2,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": " Iran Role Play | iranian server mta",
@@ -52442,7 +52412,7 @@
     {
         "ip": "54.38.132.159",
         "port": 20604,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 40,
         "gameName": "",
         "serverName": "NorthRPG - Polski Serwer | Zapraszamy | Frakcje | Darmowe auto na Start |",
@@ -52517,7 +52487,7 @@
     {
         "ip": "141.94.184.106",
         "port": 22031,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 50,
         "gameName": "",
         "serverName": "shashki prokuratura",
@@ -53117,7 +53087,7 @@
     {
         "ip": "217.195.197.20",
         "port": 22003,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 450,
         "gameName": "",
         "serverName": "Marina Roleplay T\u00c3\u00bcrk/Hard/SesliText Jandarmalar/Mafyalar/\u00c3\u0087eteler \u00e2\u009d\u00b0",
@@ -53322,21 +53292,6 @@
         "passworded": 1,
         "players": [],
         "httpPort": 22005,
-        "serials": 0
-    },
-    {
-        "ip": "149.56.41.51",
-        "port": 22063,
-        "playersCount": 0,
-        "maxPlayersCount": 100,
-        "gameName": "",
-        "serverName": "[PT/BR] Alfa City Roleplay 2024 [CORPS/FACS/TRABALHOS] #Oficial ",
-        "modeName": "",
-        "mapName": "",
-        "verName": "1.6",
-        "passworded": 0,
-        "players": [],
-        "httpPort": 22065,
         "serials": 0
     },
     {
@@ -53567,7 +53522,7 @@
     {
         "ip": "199.127.60.252",
         "port": 22024,
-        "playersCount": 3,
+        "playersCount": 2,
         "maxPlayersCount": 125,
         "gameName": "",
         "serverName": "CREATIVOS RP [MTA:SA]",
@@ -53657,7 +53612,7 @@
     {
         "ip": "45.9.30.25",
         "port": 22003,
-        "playersCount": 2,
+        "playersCount": 0,
         "maxPlayersCount": 1881,
         "gameName": "",
         "serverName": "Redline Roleplay | Hayat\u00c4\u00b1n\u00c4\u00b1 \u00c5\u009eekillendir..! Global Konsept/discord.gg/redlinemta",
@@ -53732,7 +53687,7 @@
     {
         "ip": "217.113.49.21",
         "port": 22003,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 250,
         "gameName": "",
         "serverName": "[HUN][RP] Bone County Roleplay || bcrpmta.hu",
@@ -53748,9 +53703,9 @@
         "ip": "213.181.206.26",
         "port": 22017,
         "playersCount": 0,
-        "maxPlayersCount": 120,
+        "maxPlayersCount": 4,
         "gameName": "",
-        "serverName": "[HUN] SevenMTA - discord.gg/2U7xtz7Wsn ",
+        "serverName": "[HUN] AstralMTA | GazdagRP | https://discord.gg/MTzfHTnN",
         "modeName": "",
         "mapName": "",
         "verName": "1.6",
@@ -53972,7 +53927,7 @@
     {
         "ip": "15.235.185.87",
         "port": 22004,
-        "playersCount": 2,
+        "playersCount": 0,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "eGaminglk | Sri Lankan Public PvP Arena Style Server [egaminglk.com]",
@@ -54392,7 +54347,7 @@
     {
         "ip": "78.46.65.243",
         "port": 4535,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "GUAYUBIN RP",
@@ -54602,10 +54557,10 @@
     {
         "ip": "45.87.120.153",
         "port": 22003,
-        "playersCount": 0,
-        "maxPlayersCount": 300,
+        "playersCount": 1,
+        "maxPlayersCount": 150,
         "gameName": "",
-        "serverName": "\u00e2\u0096\u0088 Alsey Roleplay #BETA \u00e2\u009d\u00b1 Sesli/Medium - discord.gg/alseymta \u00e2\u009d\u00b0(abd/amerikan Sunucusu)",
+        "serverName": "\u00e2\u0096\u0088 Alsey Roleplay v.1 \u00e2\u009d\u00b1 Sesli/Medium - discord.gg/alseymta \u00e2\u009d\u00b0(global/amerikan Sunucusu)",
         "modeName": "",
         "mapName": "",
         "verName": "1.6",
@@ -55157,7 +55112,7 @@
     {
         "ip": "146.103.26.41",
         "port": 22003,
-        "playersCount": 28,
+        "playersCount": 29,
         "maxPlayersCount": 2016,
         "gameName": "",
         "serverName": "MTA T\u00c3\u00bcrkiye \u00e2\u009d\u00b1\u00e2\u009d\u00b1 ANKARAM TOFAS GAMING \u00e2\u009d\u00b0\u00e2\u009d\u00b0 [Freeroam/Araba/Karakter/Map/Klan/Turf/Drop]",
@@ -55667,7 +55622,7 @@
     {
         "ip": "161.129.181.10",
         "port": 7066,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 32,
         "gameName": "",
         "serverName": "Uruguay Al Piso - Freeroam/Roleplay (Autos/Policia/Trabajos/Mapeos)",
@@ -55772,7 +55727,7 @@
     {
         "ip": "185.245.99.95",
         "port": 22011,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "PELIGRO ROLEPLAY | Asalto | Gang | Latino | Policia | Dominican",
@@ -55907,7 +55862,7 @@
     {
         "ip": "172.232.236.141",
         "port": 22003,
-        "playersCount": 24,
+        "playersCount": 27,
         "maxPlayersCount": 150,
         "gameName": "",
         "serverName": "[INDONESIA] Indonesia Reality Roleplay",
@@ -55967,7 +55922,7 @@
     {
         "ip": "89.42.88.252",
         "port": 22054,
-        "playersCount": 0,
+        "playersCount": 4,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "PW | Palestinian War | \u00d8\u00b3\u00d9\u008a\u00d8\u00b1\u00d9\u0081\u00d8\u00b1 \u00d8\u00ad\u00d9\u008a\u00d8\u00a7\u00d8\u00a9 \u00d9\u0088\u00d8\u00a7\u00d9\u0082\u00d8\u00b9\u00d9\u008a\u00d8\u00a9 \u00d8\u00a7\u00d9\u0084\u00d8\u00ad\u00d8\u00b1\u00d8\u00a8 \u00d8\u00a7\u00d9\u0084\u00d9\u0081\u00d8\u00b3\u00d8\u00b7\u00d9\u008a\u00d9\u0086\u00d9\u008a\u00d8\u00a9",
@@ -56445,21 +56400,6 @@
         "serials": 0
     },
     {
-        "ip": "5.42.223.212",
-        "port": 22003,
-        "playersCount": 0,
-        "maxPlayersCount": 100,
-        "gameName": "",
-        "serverName": "Xenon Gaming RP | Xenon Role Play",
-        "modeName": "",
-        "mapName": "",
-        "verName": "1.6",
-        "passworded": 0,
-        "players": [],
-        "httpPort": 22005,
-        "serials": 0
-    },
-    {
         "ip": "59.175.27.249",
         "port": 22003,
         "playersCount": 0,
@@ -56507,7 +56447,7 @@
     {
         "ip": "138.197.184.200",
         "port": 22003,
-        "playersCount": 0,
+        "playersCount": 2,
         "maxPlayersCount": 2030,
         "gameName": "",
         "serverName": "[MiddleWest Network] RolePlay Season 10 - \u00d8\u00ad\u00d9\u008a\u00d8\u00a7\u00d8\u00a9 \u00d9\u0088\u00d8\u00a7\u00d9\u0082\u00d8\u00b9\u00d9\u008a\u00d8\u00a9 \u00d9\u0088\u00d9\u0084\u00d8\u00b9\u00d8\u00a8 \u00d8\u00a3\u00d8\u00af\u00d9\u0088\u00d8\u00a7\u00d8\u00b1",
@@ -56627,7 +56567,7 @@
     {
         "ip": "37.114.42.191",
         "port": 8433,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 50,
         "gameName": "",
         "serverName": "Rush Fugas | MTA:SA",
@@ -56940,21 +56880,6 @@
         "serials": 0
     },
     {
-        "ip": "149.56.41.52",
-        "port": 22073,
-        "playersCount": 0,
-        "maxPlayersCount": 100,
-        "gameName": "",
-        "serverName": "[BR]HILL VALLEY BRASIL [ENTRE NO NOSSO DISCORD] [CARROS/MODS/MAPAS] 22073",
-        "modeName": "",
-        "mapName": "",
-        "verName": "1.6",
-        "passworded": 0,
-        "players": [],
-        "httpPort": 22075,
-        "serials": 0
-    },
-    {
         "ip": "144.76.57.59",
         "port": 10577,
         "playersCount": 0,
@@ -57257,7 +57182,7 @@
     {
         "ip": "62.3.14.47",
         "port": 22003,
-        "playersCount": 1,
+        "playersCount": 0,
         "maxPlayersCount": 100,
         "gameName": "",
         "serverName": "[IRAN]Vampire City / Role Play / Fix Res's",
@@ -58487,7 +58412,7 @@
     {
         "ip": "213.181.206.23",
         "port": 22298,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 10,
         "gameName": "",
         "serverName": "devszerosz",
@@ -78287,7 +78212,7 @@
     {
         "ip": "164.132.200.55",
         "port": 22021,
-        "playersCount": 0,
+        "playersCount": 1,
         "maxPlayersCount": 90,
         "gameName": "",
         "serverName": "Shelbi RP",
